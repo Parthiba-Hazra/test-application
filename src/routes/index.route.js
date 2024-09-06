@@ -19,7 +19,7 @@ router.use('/cars', cars);
 router.use('/accounts', accounts);
 router.use('/', swagger);
 
-router.get('/', (req, res) => res.send('Hello Ori'));
+router.get('/', (req, res) => res.send('Hello Ori!'));
 router.get('/health', (req, res) => {
   const healthcheck = {
 		uptime: process.uptime(),
